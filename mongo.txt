@@ -1,1 +1,53 @@
+Tasks
+//Create a collection named orders.
+db.createCollection('orders')
 
+//Insert at least 3 documents that represent an order. IMPORTANT: See section below for fields. Order dates should be: 2017-02-03, 2017-04-04, 2017-01-02
+{
+    "_id" : ObjectId("5adf52afea8630e09477123c"),
+    "orderDate" : ISODate("2017-02-03T00:00:00.000Z"),
+    "orderTotal" : 0.0,
+    "lineItems" : [ 
+        {
+            "unitPrice" : 0.0,
+            "quantity" : 4.0,
+            "productName" : "Desk Chair"
+        }
+    ]
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5adf52ddea8630e09477123d"),
+    "orderDate" : ISODate("2017-04-04T00:00:00.000Z"),
+    "orderTotal" : 0.0,
+    "lineItems" : [ 
+        {
+            "unitPrice" : 0.0,
+            "quantity" : 4.0,
+            "productName" : "Reel to Reel"
+        }
+    ]
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5adf5333ea8630e09477123e"),
+    "orderDate" : ISODate("2017-04-04T00:00:00.000Z"),
+    "orderTotal" : 0.0,
+    "lineItems" : [ 
+        {
+            "unitPrice" : 499.0,
+            "quantity" : 2.0,
+            "productName" : "Turntable"
+        }
+    ]
+}
+
+
+//Find all orders and make them look pretty.
+see above
+
+//Find all orders with an orderDate that is after 1/31/2017.
+
+//Change the orderTotal from 2/3/2017 to 63 dollars (you do NOT have to ensure the lineItems' unitPrice * quantity add up to the orderTotal)
